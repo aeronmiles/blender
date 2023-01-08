@@ -2242,7 +2242,7 @@ static void rna_def_ID(BlenderRNA *brna)
   prop = RNA_def_property(srna, "session_uuid", PROP_INT, PROP_UNSIGNED);
   RNA_def_property_int_sdna(prop, NULL, "session_uuid");
   RNA_def_property_clear_flag(prop, PROP_EDITABLE);
-  RNA_def_property_ui_text(prop, "Session UUID", "Unique ID for this ID in this session");
+  RNA_def_property_ui_text(prop, "Session UUID", "The Unique Session UUID of this ID");
 
   func = RNA_def_function(srna, "animation_data_create", "rna_ID_animation_data_create");
   RNA_def_function_flag(func, FUNC_USE_MAIN);
